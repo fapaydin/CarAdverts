@@ -23,7 +23,9 @@ namespace CarAdverts.WebAPI
                 try
                 {
                     var context = scope.ServiceProvider.GetService<AdvertContext>();
+                    context.Database.EnsureCreated();
                     context.Database.Migrate();
+
                     DbInitializer.SeedDb(context);
                 }
                 catch (Exception ex)

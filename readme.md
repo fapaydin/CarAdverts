@@ -14,6 +14,9 @@ Used Libraries and Technologies
 
 # To Run
 
+  -  Requires LocalDB which can be installed with SQL Server Express 2016
+     https://www.microsoft.com/en-us/download/details.aspx?id=54284
+
   - Set CarAdverts.WebAPI project as startup project and run
   - Go to  https://localhost:5001/swagger to see WebAPI Endpoints in a pretty way
   - ```sh
